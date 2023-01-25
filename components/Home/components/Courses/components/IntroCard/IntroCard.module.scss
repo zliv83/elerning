@@ -1,0 +1,9 @@
+@import '@/styles/__settings.scss';
+
+.introCard {
+  background: $pinkGradient;
+  font-weight: 800;
+  color: $white;
+  font-size: toRem(24);
+  line-height: toRem(32);
+}

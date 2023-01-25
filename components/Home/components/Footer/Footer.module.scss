@@ -1,0 +1,38 @@
+@import '@/styles/__settings.scss';
+
+.footer {
+  display: flex;
+  @include center();
+  height: toRem(120);
+  background-color: $darkBlue;
+  padding: toRem(36) toRem(16);
+
+  .footerContents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .logo {
+      color: $white;
+    }
+
+    .button {
+      background: $blueGradient;
+    }
+  }
+
+  @include tablet() {
+    padding: toRem(36) toRem(40);
+  }
+
+  @include desktop() {
+    padding: toRem(36) toRem(80);
+
+    .button:hover {
+      background: $buttonThreeHover;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import '@/styles/__settings.scss';
+
+.button {
+  background-color: $darkBlue;
+  width: toRem(140);
+  height: toRem(48);
+  border: none;
+  border-radius: toRem(28);
+  color: $white;
+  font-size: toRem(16);
+  font-weight: 700;
+  line-height: toRem(28);
+  padding: toRem(9) toRem(24);
+  z-index: 10;
+}

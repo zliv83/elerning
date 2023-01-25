@@ -1,0 +1,34 @@
+@import '@/styles/__settings.scss';
+
+.courseCard {
+  background-color: $white;
+  padding: 0 toRem(28) toRem(32) toRem(28);
+
+  .avatar {
+    margin-top: toRem(-50);
+  }
+
+  .title {
+    margin-top: toRem(24);
+    font-weight: 800;
+    font-size: toRem(20);
+    line-height: toRem(25);
+    color: $darkBlue;
+  }
+
+  .description {
+    margin-top: toRem(16);
+    font-weight: 500;
+    font-size: toRem(16);
+    line-height: toRem(26);
+    color: $grey;
+  }
+
+  .getStarted {
+    margin-top: toRem(24);
+    font-weight: 700;
+    font-size: toRem(18);
+    line-height: toRem(28);
+    color: $darkPink;
+  }
+}

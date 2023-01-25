@@ -1,0 +1,7 @@
+@import '@/styles/__settings.scss';
+
+.card {
+  border-radius: toRem(10);
+  padding: toRem(24) toRem(29) toRem(32) toRem(28);
+  width: 100%;
+}

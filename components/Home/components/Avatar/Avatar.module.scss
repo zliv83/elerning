@@ -1,0 +1,8 @@
+@import '@/styles/__settings.scss';
+
+.avatar {
+  height: toRem(56);
+  width: toRem(56);
+  border-radius: 50%;
+  background: $pinkGradient;
+}

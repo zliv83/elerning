@@ -1,0 +1,27 @@
+@import '@/styles/__settings.scss';
+
+.courses {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+
+  .courseCards {
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: toRem(16 + 44);
+    padding: toRem(16);
+    padding-bottom: toRem(80);
+
+    @include desktop() {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: toRem(30);
+      padding: 0 toRem(165) toRem(140) toRem(165);
+    }
+  }
+
+  @include tablet() {
+    .courseCards {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: toRem(16);
+      padding: 0 toRem(40) toRem(86) toRem(39);
+    }
+  }
+}

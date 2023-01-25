@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import { Montserrat } from '@next/font/google';
+// eslint-disable-next-line camelcase
+import { Plus_Jakarta_Sans } from '@next/font/google';
 
 import '@/styles/globals.scss';
 
-const mont = Montserrat({ subsets: ['latin'] });
+const mont = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }) {
   return (

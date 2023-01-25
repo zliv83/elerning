@@ -1,0 +1,100 @@
+@import '@/styles/__settings.scss';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: toRem(38);
+
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: toRem(16);
+    width: 50%;
+
+    .heroTitle {
+      font-weight: 800;
+      font-size: toRem(40);
+      line-height: toRem(50);
+      color: $darkBlue;
+      margin: 0;
+    }
+
+    .heroSubtitle {
+      margin: 0;
+      font-weight: 500;
+      font-size: toRem(16);
+      line-height: toRem(26);
+      color: $grey;
+    }
+
+    .button {
+      padding: toRem(15) toRem(38);
+      width: toRem(167);
+      height: toRem(56);
+      background: $pinkGradient;
+      border-radius: toRem(38.5);
+    }
+  }
+
+  .heroImage {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: toRem(400);
+    background-image: url('../../../../public/cawfeeLady.webp');
+    margin-left: toRem(-16);
+    margin-right: toRem(-16);
+    margin-top: toRem(46);
+  }
+
+  @include tablet() {
+    flex-direction: row;
+
+    .heroContent {
+      width: toRem(398);
+      height: toRem(284);
+      padding: toRem(99) 0 0 toRem(39);
+      margin-bottom: toRem(91.13 * 2 + 92.87);
+    }
+
+    .heroImage {
+      position: absolute;
+      width: 640.71px;
+      height: 640px;
+      left: toRem(425);
+      top: toRem(-40);
+      background-image: url('../../../../public/cawfeeLadyTablet.webp');
+      background-size: 640px 640px;
+      margin: 0;
+      background-position: 5% 75%;
+      width: 50%;
+    }
+  }
+
+  @include desktop() {
+    .heroContent {
+      width: toRem(497);
+      height: toRem(359);
+      padding: toRem(185) 0 0 toRem(165);
+      margin-bottom: toRem(226 * 2);
+
+      .button:hover {
+        background: $buttonTwoHover;
+        cursor: pointer;
+      }
+    }
+
+    .heroImage {
+      position: absolute;
+      background-image: url('../../../../public/cawfeeLadyDesktop.webp');
+      width: toRem(991.63);
+      height: toRem(936.92);
+      left: toRem(1000);
+      top: toRem(-146.13);
+      background-size: toRem(991.63) toRem(936.92);
+      margin: 0;
+      background-position: 5% 75%;
+      width: 50%;
+    }
+  }
+}

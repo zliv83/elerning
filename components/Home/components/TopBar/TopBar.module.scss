@@ -1,0 +1,22 @@
+@import '@/styles/__settings.scss';
+
+.topBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: toRem(16) toRem(16) 0 toRem(16);
+
+  @include tablet() {
+    padding: toRem(24) toRem(40) 0 toRem(39);
+  }
+
+  @include desktop() {
+    padding: toRem(38.75) toRem(165) 0 toRem(165);
+
+    .button:hover {
+      background: $lightBlue;
+      cursor: pointer;
+    }
+  }
+}
